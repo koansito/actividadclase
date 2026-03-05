@@ -24,14 +24,14 @@ image = Image.open('StJuanaTeaser.png')
 st.image(image,width=300)
 with st.sidebar:
     st.subheader("Traductor.")
-    st.write("Presiona el botón, cuando escuches la señal "
-                 "habla lo que quieres traducir, luego selecciona"   
-                 " la configuración de lenguaje que necesites.")
+    st.write("Cámara o archivo local"
+                 "tú escoges"   
+                 "Cuentanos tu decisión en los comentarios jejejeje")
 
 
 st.write("Toca el Botón y habla lo que quires traducir")
 
-stt_button = Button(label=" Habla  🎤", width=300,  height=50)
+stt_button = Button(label=" Hablalo rey 🗣️", width=300,  height=50)
 
 stt_button.js_on_event("button_click", CustomJS(code="""
     var recognition = new webkitSpeechRecognition();
